@@ -145,4 +145,6 @@ Carde section start
    font-size: 20px;
    border-top-left-radius: 10px;
    border-top-right-radius: 10px;
+   box-shadow: rgb(38 57 85) 0px 12px 30px -10px;
+
 }
