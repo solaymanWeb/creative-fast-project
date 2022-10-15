@@ -107,10 +107,9 @@ Carde section start
 }
 .card{
     width: 31.33%;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     padding-bottom: 15px;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
-  
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px; 
 } 
 .card-img img{
     width: 100%;
@@ -146,5 +145,10 @@ Carde section start
    border-top-left-radius: 10px;
    border-top-right-radius: 10px;
    box-shadow: rgb(38 57 85) 0px 12px 30px -10px;
-
+}
+/* 
+Card offer section start
+*/
+.card-offer{
+    width: 48%;
 }
