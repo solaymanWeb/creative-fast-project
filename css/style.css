@@ -15,8 +15,7 @@ a{
 .header-container{
     padding: 15px 0;
     display: flex;
-    justify-content: space-between;
-   
+    justify-content: space-between;   
 }
 .header-menu ul{
     display: flex;
@@ -122,12 +121,13 @@ Carde section start
 }
 .card-text {
     padding-left: 15px;
-
+    
 }
 .card-text a{
     padding: 15px 0px;
     display: inline-block;
     color: orangered;
+    
 }
 .card-text h3{
     padding-bottom: 8px;
@@ -142,13 +142,48 @@ Carde section start
    border: none;
    margin-bottom: 10px;
    font-size: 20px;
-   border-top-left-radius: 10px;
-   border-top-right-radius: 10px;
+   border-radius: 10px;
    box-shadow: rgb(38 57 85) 0px 12px 30px -10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
 }
 /* 
 Card offer section start
 */
 .card-offer{
     width: 48%;
+    position: relative;
+    margin-bottom: 200px;
+}
+.discount-section{
+    position: absolute;
+    width: 60%;
+    height: 100px;
+    background-color: #009910;
+    bottom: -8%;
+    right: 8%;
+    border-top-left-radius: 41px;
+    border-bottom-right-radius: 38px;
+
+}
+.discount-text h3{
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+    color: white;
+}
+/*
+ Footer section
+*/
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: bisque;
+}
+.footer-container h2{
+    font-size: 25px;
 }
