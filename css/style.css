@@ -17,19 +17,71 @@ a{
     display: flex;
     justify-content: space-between;   
 }
-.header-menu ul{
-    display: flex;
-}
-.header-menu li{
+.header-menu{
 
 }
+.header-menu ul li{
+ display: inline-block;
+ position: relative;
+
+}
+
 .header-menu li a{
     display: inline-block;
     padding: 20px 10px;
     margin: 0px 10px;
     color: #212529;
     font-weight: bold;
+}
+.header-menu ul li ul{
+    position: absolute;
+    background-color:bisque;
+    z-index: 1;
+    top: 61px;
+    left: 0;
+    width: 300px;
+    transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    transform-origin: top;
+}
+.header-menu ul li:hover > ul{
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.header-menu ul li ul li{
+    transition:all 1s;
+    -webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    -ms-transition:all 1s;
+    -o-transition:all 1s;
+}
+.header-menu ul li ul li:hover {
+    padding-left: 30px;
+
+}
+.header-menu ul li ul li{
+    width: 100%;
     position: relative;
+}
+.header-menu ul li ul li a{
+    display: block;
+    font-size: 16px;
+}
+.header-menu ul li ul li ul{
+    position: absolute;
+    left: 100%;
+    top: 0%;
 }
 .header-menu li a::after{
     position: absolute;
@@ -39,11 +91,11 @@ a{
     width: 0px;
     height: 2px;
     background-color: orangered;
-    transition: all .5s;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
 }
 .header-menu li a:hover::after{
     width: 100%;
@@ -196,6 +248,6 @@ Card offer section start
     background-color: rgb(33,37,41);
 }
 .footer-container h2{
-    font-size: 25px;
+    font-size: 20px;
     color: #fff;
 }
